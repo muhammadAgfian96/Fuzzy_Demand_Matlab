@@ -32,6 +32,7 @@ a=addmf(a,'output',2,'Very High','trimf', [480 680 700]);
 % figure,
 % plotmf(a,'output',2)
 
+% D S FOQ ROP W &|
 ruleList=[ ...
 1 1 2 3 1 1
 1 2 1 3 1 1
@@ -44,10 +45,17 @@ ruleList=[ ...
 3 3 3 4 1 1
 ];
 
-% D S FOQ ROP W R
+
 a=addrule(a, ruleList );
 
-% showfis(a);
+out = evalfis([120 600],a);
+s=num2str(out(1));
+X = sprintf('FOQ = %s',s);
+disp(X);
+
+s2=num2str(out(2));
+X2 = sprintf('ROP = %s',s2);
+disp(X2);
+
+showfis(a);
 showrule(a,[1 2 3 4 5 6 7 8 9]);
-ans
-% output = evalfis([ 1 2], a); % Output calculation, input = [ 1 2]
