@@ -68,9 +68,12 @@ a=addrule(a, ruleList );
 in_demand = str2num(handles.edit_demand.String);
 in_supply = str2num(handles.edit_supply.String);
 out = evalfis([in_demand in_supply],a);
+global s
+global s2
 s=num2str(out(1));
 X = sprintf('FOQ = %s',s);
 disp(X);
+
 
 s2=num2str(out(2));
 X2 = sprintf('ROP = %s',s2);

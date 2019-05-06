@@ -55,6 +55,7 @@ function GUI_fuzzy_OpeningFcn(hObject, eventdata, handles, varargin)
 % Choose default command line output for GUI_fuzzy
 handles.output = hObject;
 
+
 % Update handles structure
 guidata(hObject, handles);
 
@@ -79,6 +80,12 @@ function btn_run_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 FLC
+global s
+global s2
+
+set(handles.edit_foq,'String',s);
+set(handles.edit_rop,'String',s2);
+
 
 
 function edit_foq_Callback(hObject, eventdata, handles)
