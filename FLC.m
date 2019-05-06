@@ -1,3 +1,5 @@
+% using matlab 2016b
+
 a=newfis('tipper');
 a=addvar(a,'input','demand',[0 320]);
 a=addmf(a,'input',1,'Low','trapmf', [-115.2 -12.8 82.42 160]);
@@ -31,11 +33,21 @@ a=addmf(a,'output',2,'Very High','trimf', [480 680 700]);
 % plotmf(a,'output',2)
 
 ruleList=[ ...
-1 1 1 1 2
-2 0 2 1 1];
+1 1 2 3 1 1
+1 2 1 3 1 1
+1 3 2 2 1 1
+2 1 1 5 1 1
+2 2 2 4 1 1
+2 3 3 4 1 1
+3 1 2 5 1 1
+3 2 3 4 1 1
+3 3 3 4 1 1
+];
 
+% D S FOQ ROP W R
 a=addrule(a, ruleList );
 
-showfis(a);
-showrule(a);
+% showfis(a);
+showrule(a,[1 2 3 4 5 6 7 8 9]);
+ans
 % output = evalfis([ 1 2], a); % Output calculation, input = [ 1 2]
