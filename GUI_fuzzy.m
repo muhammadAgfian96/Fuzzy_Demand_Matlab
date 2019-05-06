@@ -22,7 +22,7 @@ function varargout = GUI_fuzzy(varargin)
 
 % Edit the above text to modify the response to help GUI_fuzzy
 
-% Last Modified by GUIDE v2.5 07-May-2019 01:49:09
+% Last Modified by GUIDE v2.5 07-May-2019 01:54:11
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -78,21 +78,21 @@ function btn_run_Callback(hObject, eventdata, handles)
 % hObject    handle to btn_run (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+FLC
 
 
-
-function edit3_Callback(hObject, eventdata, handles)
-% hObject    handle to edit3 (see GCBO)
+function edit_foq_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_foq (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-% Hints: get(hObject,'String') returns contents of edit3 as text
-%        str2double(get(hObject,'String')) returns contents of edit3 as a double
+% Hints: get(hObject,'String') returns contents of edit_foq as text
+%        str2double(get(hObject,'String')) returns contents of edit_foq as a double
 
 
 % --- Executes during object creation, after setting all properties.
-function edit3_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to edit3 (see GCBO)
+function edit_foq_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_foq (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -104,18 +104,18 @@ end
 
 
 
-function edit4_Callback(hObject, eventdata, handles)
-% hObject    handle to edit4 (see GCBO)
+function edit_rop_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_rop (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-% Hints: get(hObject,'String') returns contents of edit4 as text
-%        str2double(get(hObject,'String')) returns contents of edit4 as a double
+% Hints: get(hObject,'String') returns contents of edit_rop as text
+%        str2double(get(hObject,'String')) returns contents of edit_rop as a double
 
 
 % --- Executes during object creation, after setting all properties.
-function edit4_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to edit4 (see GCBO)
+function edit_rop_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_rop (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -127,18 +127,18 @@ end
 
 
 
-function edit1_Callback(hObject, eventdata, handles)
-% hObject    handle to edit1 (see GCBO)
+function edit_demand_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_demand (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-% Hints: get(hObject,'String') returns contents of edit1 as text
-%        str2double(get(hObject,'String')) returns contents of edit1 as a double
+% Hints: get(hObject,'String') returns contents of edit_demand as text
+%        str2double(get(hObject,'String')) returns contents of edit_demand as a double
 
 
 % --- Executes during object creation, after setting all properties.
-function edit1_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to edit1 (see GCBO)
+function edit_demand_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_demand (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -150,18 +150,18 @@ end
 
 
 
-function edit2_Callback(hObject, eventdata, handles)
-% hObject    handle to edit2 (see GCBO)
+function edit_supply_Callback(hObject, eventdata, handles)
+% hObject    handle to edit_supply (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
-% Hints: get(hObject,'String') returns contents of edit2 as text
-%        str2double(get(hObject,'String')) returns contents of edit2 as a double
+% Hints: get(hObject,'String') returns contents of edit_supply as text
+%        str2double(get(hObject,'String')) returns contents of edit_supply as a double
 
 
 % --- Executes during object creation, after setting all properties.
-function edit2_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to edit2 (see GCBO)
+function edit_supply_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to edit_supply (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
