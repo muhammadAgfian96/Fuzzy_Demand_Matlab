@@ -59,6 +59,8 @@ handles.output = hObject;
 % Update handles structure
 guidata(hObject, handles);
 
+I=imread('bg.jpg'); 
+imshow(I,'parent',handles.axes_bg);
 % UIWAIT makes GUI_fuzzy wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
 

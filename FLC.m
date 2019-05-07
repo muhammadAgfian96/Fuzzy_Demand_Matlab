@@ -1,5 +1,6 @@
 % using matlab 2016b
 % https://www.researchgate.net/post/How_can_I_implement_fuzzy_logic_in_matlab_without_using_fuzzy_logic_toolbox
+% by GORITMA INDONESIA
 
 a=newfis('tipper');
 a=addvar(a,'input','demand',[0 320]);
